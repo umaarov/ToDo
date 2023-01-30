@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/pink"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        />
+
+    <EditText
+        android:id="@+id/edt_to_do_name"
+        style="@style/edit_style"
+        android:hint="Name" />
+
+    <EditText
+        style="@style/edit_style"
+        android:id="@+id/edt_to_do_description"
+        android:hint="Decription"
+        />
+
+    <Spinner
+       style="@style/edit_style"
+        android:id="@+id/spiner_add_to_do"
+        />
+
+    <EditText
+        style="@style/edit_style"
+        android:id="@+id/edt_to_do_create_data"
+        android:hint="Date"
+        />
+
+    <EditText
+        style="@style/edit_style"
+        android:id="@+id/edt_dedline"
+        android:hint="Dedline"
+        />
+
+
+    <Button
+
+        android:id="@+id/btn_save_add_to_do"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/pink"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+</LinearLayout>
